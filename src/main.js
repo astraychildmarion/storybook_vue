@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import commonComponent from '../dist/commonComponents.common.js'
+import XycloudUiKit from '../dist/xycloud-ui-kit.common.js'
 
-Vue.use(commonComponent)
+Vue.use(XycloudUiKit)
 
 Vue.config.productionTip = false
 
