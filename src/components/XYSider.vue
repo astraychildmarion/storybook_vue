@@ -1,5 +1,5 @@
 <template>
-  <div class="sider-wrapper">
+  <div class="xy-sider-wrapper">
     <Menu
       :default-selected-keys="defaultSelectedKey"
       :default-open-keys="defaultOpenKey"
@@ -34,7 +34,7 @@
 <script>
 import { Menu, Icon } from "ant-design-vue";
 export default {
-  name: 'CommonSider',
+  name: 'XYSider',
   props: {
     theme: {
       type: String,
@@ -79,7 +79,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.sider {
+.xy-sider {
   &-wrapper {
     width: 256px;
     ::v-deep .ant-menu {

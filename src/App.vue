@@ -32,11 +32,11 @@
       @clickTopLeftCorner="siderCollapsed = !siderCollapsed"
     />
     <div class="seperator">Sider</div>
-    <common-button
+    <XYButton
       @clickButton="clickSiderControl"
       buttonText="click to hide/show sider"
     />
-    <common-sider :siderData="siderData" :collapsed="siderCollapsed" />
+    <XYSider :siderData="siderData" :collapsed="siderCollapsed" />
     <!-- <div class="seperator">AuthModal</div>
     <auth-modal @clickButton="clickAuthButton" />
     <div class="seperator">CommonCard and TextDetail</div>

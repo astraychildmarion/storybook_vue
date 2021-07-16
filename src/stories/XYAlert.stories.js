@@ -1,7 +1,7 @@
-import AlertComponent from '@/components/CommonAlert.vue';
+import AlertComponent from '@/components/XYAlert.vue';
 
 export default {
-  title: 'Component/Alert',
+  title: 'XY Component/Alert',
   component: AlertComponent,
   argTypes: {
     type: { control: { type: 'select', options: ['success', 'info', 'warning', 'error'] } },

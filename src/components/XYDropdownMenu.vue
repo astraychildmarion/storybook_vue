@@ -1,5 +1,5 @@
 <template>
-  <div class="dropdown__wrapper">
+  <div class="xy-dropdown-wrapper">
     <Dropdown>
       <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
         {{ title }} <Icon :type="dropdownIcon" />
@@ -16,7 +16,7 @@
 <script>
 import { Dropdown, Icon, Menu } from "ant-design-vue";
 export default {
-  name: 'DropdownMenu',
+  name: 'XYDropdownMenu',
   props: {
     menuData: {
       type: Array,
@@ -34,8 +34,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.dropdown {
-  &__wrapper {
+.xy-dropdown {
+  &-wrapper {
     margin: 10px;
   }
 }

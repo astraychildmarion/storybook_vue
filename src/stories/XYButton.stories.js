@@ -1,7 +1,7 @@
-import ButtonComponent from '@/components/CommonButton.vue';
+import ButtonComponent from '@/components/XYButton.vue';
 
 export default {
-  title: 'Component/Button',
+  title: 'XY Component/Button',
   component: ButtonComponent,
   argTypes: {
     size: { control: { type: 'select', options: ['small','default', 'large'] } },

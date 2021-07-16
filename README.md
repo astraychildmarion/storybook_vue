@@ -1,13 +1,20 @@
 # common-components
-  ✋🏼 Welcome to common UI library demo. Below is steps to setup the project fast 🎉 <br>
+  ✋🏼 Welcome to common UI library demo. Below is steps to demo the project fast 🎉 <br>
   🥺 npm user please replace yarn with npm.
   ```
   1. yarn install
   2. yarn prod
-  3. yarn build storybook (to build storybook as a as a static web application)
+  3. yarn storybook-build (to build storybook as a as a static web application)
   4. yarn serve (to watch components in application)
-  5. yarn open storybook (to watch storybook in application)
+  5. yarn open-storybook (to watch storybook in application)
   ```
+if you are developing this project:
+  ```
+  1. yarn install
+  2. yarn serve
+  3. yarn storybook
+  ```
+
 ### Project setup
 ```
 yarn install
@@ -35,10 +42,10 @@ yarn storybook
 
 ### Build Storybook as a static web application
 ```
-yarn build-storybook
+yarn storybook-build
 ```
 
 ### Open Storybook web application
 ```
-npx http-server ./path/to/build
+yarn open-storybook
 ```

@@ -1,5 +1,5 @@
 <template>
-  <div class="detail__text__wrapper">
+  <div class="xy-detail-text-wrapper">
     <Icon type="star" style="lineHeight: 18px"/>
     <Badge count="25" />
     <div style="marginTop:10px"><span>{{detail.type}}</span>。<span>{{ detail.add }}</span></div>
@@ -10,7 +10,7 @@
 <script>
 import { Icon, Badge } from 'ant-design-vue'
 export default {
-  name: "TextDetail",
+  name: "XYTextDetail",
   props: {
     detail: {
       type: Object
