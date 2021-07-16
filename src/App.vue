@@ -9,9 +9,9 @@
       in your command-line and open Storybook for more info.
     </h3>
     <div class="seperator">AppLayout</div>
-    <app-layout :siderExpanded="!siderCollapsed">
+    <XYAppLayout :siderExpanded="!siderCollapsed">
       <template #header>
-        <common-header
+        <XYHeader
           :logoUrl="logoUrl"
           :manageMenu="manageMenu"
           :userMenu="userMenu"
@@ -20,11 +20,11 @@
         />
       </template>
       <template #sider>
-        <common-sider :siderData="siderData" :collapsed="siderCollapsed" />
+        <XYSider :siderData="siderData" :collapsed="siderCollapsed" />
       </template>
-    </app-layout>
+    </XYAppLayout>
     <div class="seperator">Header</div>
-    <common-header
+    <XYHeader
       :logoUrl="logoUrl"
       :manageMenu="manageMenu"
       :userMenu="userMenu"

@@ -4,6 +4,7 @@ const install = function(Vue) {
   componentList.keys().forEach(fileName => {
     const componentConfig = componentList(fileName)
     const newName = fileName.replace(/^\.\//, '').replace(/\.\w+$/, '')
+    console.log(newName)
     Vue.component(`${newName}`, componentConfig.default || componentConfig)
   })
 }
