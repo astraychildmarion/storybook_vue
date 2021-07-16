@@ -6,6 +6,8 @@ import DropdownMenu from './DropdownMenu.vue'
 import CommonFilter from './Filter.vue'
 import TextDetail from './TextDetail.vue'
 import CommonSider from './Sider.vue'
+import AppLayout from './Layout/AppLayout.vue'
+import CommonHeader from './Header.vue'
 
 const componentList = [
   AuthModal, 
@@ -15,7 +17,9 @@ const componentList = [
   DropdownMenu, 
   CommonFilter, 
   TextDetail,
-  CommonSider
+  CommonSider,
+  AppLayout,
+  CommonHeader
 ]
 
 const install = function(Vue) {

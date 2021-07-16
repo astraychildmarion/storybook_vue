@@ -8,6 +8,29 @@
       or <br /><b>npm build-storybook</b><br />
       in your command-line and open Storybook for more info.
     </h3>
+    <div class="seperator">AppLayout</div>
+    <app-layout :siderExpanded="!siderCollapsed">
+      <template #header>
+        <common-header
+          :logoUrl="logoUrl"
+          :manageMenu="manageMenu"
+          :userMenu="userMenu"
+          :userInfo="userInfo"
+          @clickTopLeftCorner="siderCollapsed = !siderCollapsed"
+        />
+      </template>
+      <template #sider>
+        <common-sider :siderData="siderData" :collapsed="siderCollapsed" />
+      </template>
+    </app-layout>
+    <div class="seperator">Header</div>
+    <common-header
+      :logoUrl="logoUrl"
+      :manageMenu="manageMenu"
+      :userMenu="userMenu"
+      :userInfo="userInfo"
+      @clickTopLeftCorner="siderCollapsed = !siderCollapsed"
+    />
     <div class="seperator">Sider</div>
     <common-button
       @clickButton="clickSiderControl"
@@ -113,6 +136,13 @@ export default {
           ],
         },
       ],
+      logoUrl: "/logo.svg",
+      manageMenu: [{ name: "Role Manage (IAM)", url: "#" }],
+      userMenu: [{ name: "Log Out", url: "#", icon: "logout" }],
+      userInfo: {
+        name: "User 1",
+        avatar: "/logo.png",
+      },
     };
   },
   methods: {
@@ -126,8 +156,8 @@ export default {
       this.isShowFilterModal = !this.isShowFilterModal;
     },
     clickSiderControl() {
-      this.siderCollapsed = !this.siderCollapsed
-    }
+      this.siderCollapsed = !this.siderCollapsed;
+    },
   },
 };
 </script>

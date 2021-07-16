@@ -42,5 +42,3 @@ yarn build-storybook
 ```
 npx http-server ./path/to/build
 ```
-
-
