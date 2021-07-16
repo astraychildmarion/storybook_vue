@@ -1,7 +1,7 @@
-import DropdownMenuComponent from '@/components/DropdownMenu.vue';
+import DropdownMenuComponent from '@/components/XYDropdownMenu.vue';
 
 export default {
-  title: 'Component/DropdownMenu',
+  title: 'XY Component/DropdownMenu',
   component: DropdownMenuComponent,
   argTypes: {
     title: { control: 'text' },

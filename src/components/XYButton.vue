@@ -1,5 +1,5 @@
 <template>
-  <div class="commonButton">
+  <div class="xy-button-wrapper">
     <Button
       :type="type"
       :shape="shape"
@@ -16,7 +16,7 @@
 <script>
 import { Button } from "ant-design-vue";
 export default {
-  name: "CommonButton",
+  name: "XYButton",
   props: {
     buttonText: {
       default: "Button",

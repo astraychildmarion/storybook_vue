@@ -18,5 +18,5 @@ export const parameters = {
 
 export const decorators = [(story) => ({
   components: { story },
-  template: '<div style="margin: 3em;"><story /></div>'
+  template: '<div style="margin: 1em;"><story /></div>'
 })]

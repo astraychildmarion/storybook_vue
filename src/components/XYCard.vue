@@ -12,7 +12,7 @@
 <script>
 import { Card } from 'ant-design-vue'
 export default {
-  name: 'CommonCard',
+  name: 'XYCard',
   components: { Card},
   props: {
     detail: {

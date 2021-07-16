@@ -9,9 +9,9 @@
       in your command-line and open Storybook for more info.
     </h3>
     <div class="seperator">AppLayout</div>
-    <app-layout :siderExpanded="!siderCollapsed">
+    <XYAppLayout :siderExpanded="!siderCollapsed">
       <template #header>
-        <common-header
+        <XYHeader
           :logoUrl="logoUrl"
           :manageMenu="manageMenu"
           :userMenu="userMenu"
@@ -20,11 +20,11 @@
         />
       </template>
       <template #sider>
-        <common-sider :siderData="siderData" :collapsed="siderCollapsed" />
+        <XYSider :siderData="siderData" :collapsed="siderCollapsed" />
       </template>
-    </app-layout>
+    </XYAppLayout>
     <div class="seperator">Header</div>
-    <common-header
+    <XYHeader
       :logoUrl="logoUrl"
       :manageMenu="manageMenu"
       :userMenu="userMenu"
@@ -32,11 +32,11 @@
       @clickTopLeftCorner="siderCollapsed = !siderCollapsed"
     />
     <div class="seperator">Sider</div>
-    <common-button
+    <XYButton
       @clickButton="clickSiderControl"
       buttonText="click to hide/show sider"
     />
-    <common-sider :siderData="siderData" :collapsed="siderCollapsed" />
+    <XYSider :siderData="siderData" :collapsed="siderCollapsed" />
     <!-- <div class="seperator">AuthModal</div>
     <auth-modal @clickButton="clickAuthButton" />
     <div class="seperator">CommonCard and TextDetail</div>

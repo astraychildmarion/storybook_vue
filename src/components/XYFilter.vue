@@ -1,11 +1,11 @@
 <template>
-  <div class="filter__wapper">
-    <div class="filter__value__wrapper" v-if="isShowFilterModal">
-      <div class="filter__value__title"> {{ title }}</div>
-      <div class="filter__value__body">
-        <div class="filter__value__body__item" v-for="filter in filterSet" :key="filter" :id='`filter_${filter}`'>
+  <div class="xy-filter-wapper">
+    <div class="xy-filter-value-wrapper" v-if="isShowFilterModal">
+      <div class="xy-filter-value-title"> {{ title }}</div>
+      <div class="xy-filter-value-body">
+        <div class="xy-filter-value-body-item" v-for="filter in filterSet" :key="xy-filter" :id='`filter_${filter}`'>
           <Select
-            class="filter__value__body__item__select"
+            class="xy-filter-value-body-item-select"
             @change="handleChange"
           >
             <Option
@@ -15,10 +15,10 @@
               >{{ item.text }}</Option
             >
           </Select>
-          <Input class="filter__value__body__item__input" placeholder="Value" :value="filterValue[`${filter}`].value" @change="$emit('inputChange', filterValue)" />
-          <Button class="filter__value__body__item__button" icon="delete" @click="deleteFilter(filter)" />
+          <Input class="xy-filter-value-body-item-input" placeholder="Value" :value="filterValue[`${filter}`].value" @change="$emit('inputChange', filterValue)" />
+          <Button class="xy-filter-value-body-item-button" icon="delete" @click="deleteFilter(filter)" />
         </div>
-        <Button class="filter__value__body__plus__button" icon="plus" @click="addFilter">
+        <Button class="xy-filter-value-body-plus-button" icon="plus" @click="addFilter">
           Add a filter
         </Button>
       </div>
@@ -29,7 +29,7 @@
 import { Button, Select, Input } from "ant-design-vue";
 
 export default {
-  name: 'CommonFilter',
+  name: 'XYFilter',
   props: {
     isShowFilterModal: {
       type: Boolean,
@@ -69,37 +69,37 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.filter__value {
-  &__wrapper {
+.xy-filter-value {
+  &-wrapper {
     box-shadow: $box-shadow;
     border-radius: $box-radius;
     border: $box-border;
     width: 500px;
   }
-  &__title {
+  &-title {
     border-bottom: $box-border;
     padding: 20px;
     font-size: 1.25rem;
     text-align: left;
   }
-  &__body {
+  &-body {
     padding: 1rem 2rem;
-    &__item {
+    &-item {
       display: flex;
       margin: 1rem auto;
-      &__button {
+      &-button {
         border: none;
       }
-      &__select {
+      &-select {
         margin-right: 20px;
         width: 200px;
       }
-      &__input {
+      &-input {
         width: 200px;
         margin-right: 20px;
       }
     }
-    &__plus__button {
+    &-plus-button {
       margin: 20px 100% 20px 0;
     }
   }

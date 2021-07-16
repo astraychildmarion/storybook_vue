@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "AppLayout",
+  name: "XYAppLayout",
   props: {
     siderExpanded: {
       type: Boolean,

@@ -1,7 +1,7 @@
-import FilterComponent from '../components/Filter';
+import FilterComponent from '@/components/XYFilter';
 
 export default {
-  title: 'Component/Filter',
+  title: 'XY Component/Filter',
   component: FilterComponent,
   argTypes: {
     title: { control: 'text' },

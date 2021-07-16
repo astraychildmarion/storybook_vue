@@ -1,8 +1,8 @@
-import CardComponent from '@/components/CommonCard.vue';
-import DetailComponent from '@/components/TextDetail.vue'
+import CardComponent from '@/components/XYCard.vue';
+import DetailComponent from '@/components/XYTextDetail.vue'
 
 export default {
-  title: 'Component/Card',
+  title: 'XY Component/Card',
   component: CardComponent,
   subcomponents : { DetailComponent },
   argTypes: {

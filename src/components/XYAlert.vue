@@ -1,12 +1,12 @@
 <template>
-  <div class="commonAlert">
+  <div class="xy-alert-wrapper">
     <Alert :type="type" :message="message" :description="description" />
   </div>
 </template>
 <script>
 import { Alert } from "ant-design-vue";
 export default {
-  name: "CommonAlert",
+  name: "XYAlert",
   props: {
     type: {
       default: 'info',

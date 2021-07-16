@@ -1,5 +1,5 @@
 <template>
-<div class="modal__wrapper">
+<div class="xy-modal-wrapper">
   <FormModel layout="inline" :model="formInline">
     <FormModelItem>
       <Input v-model="formInline.user" placeholder="Username">
@@ -27,7 +27,7 @@
 <script>
 import { FormModel, Button, Icon, Input } from 'ant-design-vue';
 export default {
-  name: 'AuthModal',
+  name: 'XYAuthModal',
   components: { FormModel, FormModelItem: FormModel.Item, Button, Icon, Input },
   data() {
     return {
@@ -40,7 +40,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.modal__wrapper {
+.xy-modal__wrapper {
   margin: 20px auto;
   border: 1px solid rgba($color: #ccc, $alpha: 0.6);
   box-shadow: 1px 1px 2px rgba($color: #ccc, $alpha: 0.5);

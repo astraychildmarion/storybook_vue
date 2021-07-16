@@ -1,7 +1,7 @@
-import Sider from '@/components/Sider.vue';
+import Sider from '@/components/XYSider.vue';
 
 export default {
-  title: 'Component/Sider',
+  title: 'XY Component/Sider',
   component: Sider,
   argTypes: {
     clickSubmenuTitle: {

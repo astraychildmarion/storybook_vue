@@ -1,7 +1,7 @@
-import Header from "@/components/Header.vue";
+import Header from "@/components/XYHeader.vue";
 
 export default {
-  title: "Component/Header",
+  title: "XY Component/Header",
   component: Header,
   argTypes: {
     clickTopLeftCorner: {

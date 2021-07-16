@@ -1,7 +1,7 @@
-import AuthComponent from '@/components/AuthModal.vue';
+import AuthComponent from '@/components/XYAuthModal.vue';
 
 export default {
-  title: 'Component/AuthModal',
+  title: 'XY Component/AuthModal',
   component: AuthComponent,
   argTypes: {
     clickButton: { action: 'clickButton'}

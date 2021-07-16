@@ -1,9 +1,9 @@
-import AppLayout from "@/components/Layout/AppLayout.vue";
-import Sider from "@/components/Sider.vue";
-import Header from "@/components/Header.vue";
+import AppLayout from "@/components/XYAppLayout.vue";
+import Sider from "@/components/XYSider.vue";
+import Header from "@/components/XYHeader.vue";
 
 export default {
-  title: "Component/AppLayout",
+  title: "XY Component/AppLayout",
   component: AppLayout,
   argTypes: {
     siderExpanded: {
