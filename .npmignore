@@ -1,0 +1,10 @@
+src/
+public/
+.storybook/
+.eslintignore
+.gitignore
+babel.config.js
+eslintrc.js
+package-lock.json
+vue.config.js
+yarn.lock
