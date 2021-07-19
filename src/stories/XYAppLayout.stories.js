@@ -1,4 +1,4 @@
-import AppLayout from "@/components/XYAppLayout.vue";
+import AppLayout from "@/components/layout/XYAppLayout.vue";
 import Sider from "@/components/XYSider.vue";
 import Header from "@/components/XYHeader.vue";
 

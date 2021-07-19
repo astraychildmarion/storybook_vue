@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import commonComponent from '../dist/commonComponents.common.js'
+import commonComponents from '../dist/commonComponents.common.js'
 
-Vue.use(commonComponent)
+Vue.use(commonComponents)
 
 Vue.config.productionTip = false
 
