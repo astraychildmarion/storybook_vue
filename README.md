@@ -14,6 +14,10 @@ if you are developing this project:
   2. yarn serve
   3. yarn storybook
   ```
+  
+### some reminder beforehand
+#### css naming: BEM
+`.blockName-elementName--modifierName`
 
 ### Project setup
 ```
