@@ -1,41 +1,73 @@
-import Header from "@/components/XYHeader.vue";
+import XYHeader from '@/components/XYHeader.vue';
 
 export default {
-  title: "XY Component/Header",
-  component: Header,
+  title: 'XY Component/Header',
+  component: XYHeader,
   argTypes: {
-    clickTopLeftCorner: {
-      description: "Action triggered by clicking top left corner",
+    manageAuth: {
+      control: 'boolean',
+      description: 'Authority/Permission to show the Manage section.',
     },
     logoUrl: {
-      description: "A logo link",
+      control: 'text',
+      description: 'A logo link',
+    },
+    logoLink: {
+      control: 'text',
+      description: 'A href for logo.',
+    },
+    height: {
+      control: 'text',
+      description: 'Height of header. Default is 72px. ',
     },
     manageMenu: {
-      description: "Menu items of manage menu, including item text and link",
+      control: 'array',
+      description: 'Menu items of manage menu, including item text and link',
     },
     userMenu: {
-      description:
-        "User items of user menu, including item text, link and icon key",
+      control: 'array',
+      description: 'User items of user menu, including item text, link and icon key',
     },
     userInfo: {
-      description: "User information, including user name and avatar",
+      control: 'object',
+      description:
+        'User information, including user name and avatar. Avatar is ant design avatar, please prepare content you want to show.',
+    },
+    logOut: {
+      action: 'logOut',
+      description: 'Emit function for logout',
+    },
+    clickTopLeftCorner: {
+      action: 'clickTopLeftCorner',
+      description: 'To control app list drawer.',
     },
   },
 };
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Header },
-  template: '<Header v-bind="$props"/>',
+  components: { XYHeader },
+  template: `
+    <XYHeader
+      v-bind="$props"
+      @logOut="logOut"
+      @clickTopLeftCorner="clickTopLeftCorner"
+    />
+  `,
 });
 
 export const Default = Template.bind({});
 Default.args = {
-  logoUrl: "/logo.svg",
-  manageMenu: [{ name: "Role Manage (IAM)", url: "#" }],
-  userMenu: [{ name: "Log Out", url: "#", icon: "logout" }],
+  manageAuth: true,
+  logoUrl: '/logo.svg',
+  height: '72px',
+  manageMenu: [
+    { name: 'Role Manage (IAM)', url: '#', icon: 'team' },
+    { name: 'XY IAM', url: '#', icon: 'user' },
+  ],
+  userMenu: [{ name: 'Member', url: '#', icon: 'user' }],
   userInfo: {
-    name: "User 1",
-    avatar: "/logo.png",
+    name: 'User 1',
+    avatar: 'SA',
   },
 };

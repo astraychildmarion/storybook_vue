@@ -1,30 +1,30 @@
 <template>
-  <div class="xy-sider-wrapper">
+  <div class="xy-sider__wrapper" :style="collapseStyle">
     <Menu
-      :default-selected-keys="defaultSelectedKey"
-      :default-open-keys="defaultOpenKey"
       mode="inline"
+      :selectedKeys="selectedKeys"
+      :defaultOpenKeyss="defaultOpenKeys"
       :inline-collapsed="collapsed"
-      @click="clickMenu"
       :theme="theme"
+      @click="$emit('clickMenu', $event)"
+      @mouseenter="toggleCollapsed(false, $event)"
+      @mouseleave="toggleCollapsed(true, $event)"
     >
-      <MenuItem key="item.name" class="sider-header">
-        <span class="anticon">XY</span>
-        <span>Dashboard</span>
-      </MenuItem>
       <template v-for="item in siderData">
-        <MenuItem v-if="item.to" :key="item.name">
+        <MenuItem v-if="item.path" :key="item.key">
           <Icon v-if="item.icon" :type="item.icon" />
+          <img v-if="item.iconPath" :src="item.iconPath" class="anticon" />
           <span>{{ item.name }}</span>
         </MenuItem>
-        <Submenu v-else :key="item.name" @titleClick="clickSubmenuTitle">
+        <Submenu v-else :key="item.key" @titleClick="$emit('clickSubmenu', $event)">
           <span slot="title">
             <Icon :type="item.icon" :key="item.name" />
+            <img v-if="item.iconPath" :src="item.iconPath" class="anticon" />
             <span>{{ item.name }}</span>
           </span>
-          <MenuItem v-for="itemChild in item.child" :key="itemChild.name">{{
-            itemChild.name
-          }}</MenuItem>
+          <MenuItem v-for="itemChild in item.child" :key="itemChild.key">
+            {{ itemChild.name }}
+          </MenuItem>
         </Submenu>
       </template>
     </Menu>
@@ -32,18 +32,29 @@
 </template>
 
 <script>
-import { Menu, Icon } from "ant-design-vue";
+import { Menu, Icon } from 'ant-design-vue';
+import _ from 'lodash';
+
 export default {
   name: 'XYSider',
   props: {
+    // as a sider, no hover toggle.
+    // app drawer list need hover toggle
+    stopToggle: {
+      type: Boolean,
+      default: false,
+    },
     theme: {
       type: String,
-      default: "light",
+      default: 'light',
     },
-    defaultSelectedKey: {
+    selectedKeys: {
       type: Array,
+      default() {
+        return ['1'];
+      },
     },
-    defaultOpenKey: {
+    defaultOpenKeys: {
       type: Array,
     },
     siderData: {
@@ -53,9 +64,10 @@ export default {
       default: false,
       type: Boolean,
     },
-  },
-  data() {
-    return {};
+    collapseWidth: {
+      default: '72px',
+      type: String,
+    },
   },
   components: {
     Menu,
@@ -63,64 +75,69 @@ export default {
     Icon,
     Submenu: Menu.SubMenu,
   },
+  computed: {
+    collapseStyle() {
+      return {
+        '--collapse--width': this.collapseWidth,
+        '--wrapper--width': this.collapsed ? '72px' : '256px',
+      };
+    },
+  },
   methods: {
-    toggleCollapsed() {
-      this.collapsed = !this.collapsed;
-    },
-    clickSubmenuTitle({ key, domEvent }) {
-      console.log("clickSubmenuTitle");
-      console.log(key, domEvent);
-    },
-    clickMenu({ item, key, keyPath }) {
-      console.log("clickMenu");
-      console.log(item, key, keyPath);
-    },
+    /* eslint-disable */
+    toggleCollapsed: _.debounce(function (boo, $event) {
+      if (this.stopToggle) return
+      if (boo === this.collapsed) return;
+      this.$emit('siderCollapse', boo);
+    }, 300),
   },
 };
 </script>
 <style lang="scss" scoped>
 .xy-sider {
-  &-wrapper {
-    width: 256px;
+  &__wrapper {
+    width: var(--wrapper--width);
+    overflow: auto;
+    height: 100vh;
+    transition: width cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
     ::v-deep .ant-menu {
       height: 100vh;
       &.ant-menu-inline-collapsed > .ant-menu-item .anticon,
-      &.ant-menu-inline-collapsed
-        > .ant-menu-submenu
-        > .ant-menu-submenu-title
-        .anticon {
+      &.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon {
         line-height: 0;
       }
       &.ant-menu-inline-collapsed {
-        width: 72px;
+        width: var(--collapse--width);
         > .ant-menu-item {
           text-align: center;
           padding: 0 24px !important;
+          width: var(--collapse--width);
         }
         > .ant-menu-submenu > .ant-menu-submenu-title {
           padding: 0 24px !important;
           text-align: center;
         }
       }
-
-      .sider-header {
-        box-shadow: inset 0 -1px 0 0 $sider-text-light;
-        height: 64px;
-        display: flex;
-        margin-bottom: 18px;
-        align-items: center;
-        .anticon {
-          font-weight: bold;
-          font-size: large;
+      &-root {
+        > .ant-menu-item {
+          &:first-child {
+            margin-top: 10px;
+            box-shadow: inset 0 -1px 0 0 $sider-item-text-light;
+            display: flex;
+            align-items: center;
+            &.ant-menu-item-selected {
+              box-shadow: none;
+            }
+          }
         }
       }
-      .sider-item {
+      .xy-sider__item {
         display: flex;
         align-items: center;
       }
       &-item {
-        min-height: 52px;
-        line-height: 52px;
+        min-height: 56px;
+        line-height: 56px;
         margin-top: 0px;
         margin-bottom: 0px;
         .anticon {
@@ -133,19 +150,48 @@ export default {
           vertical-align: middle;
         }
       }
-
+      // dark theme
+      &.ant-menu-dark {
+        background-color: $sider-bg-dark;
+        .ant-menu-item:hover {
+          background-color: $sider-item-selected-dark;
+        }
+        .ant-menu-item {
+          color: $sider-item-text-dark;
+          &-selected {
+            background-color: $sider-item-selected-dark;
+            &::after {
+              border-right: 3px solid $sider-item-selected-border-dark;
+              transform: scaleY(1);
+              opacity: 1;
+            }
+          }
+          &-active {
+            background-color: $sider-item-active-dark;
+          }
+          .anticon {
+            color: $sider-item-icon-dark;
+          }
+        }
+      }
+      // light theme
       &.ant-menu-light {
         background: $sider-bg-light;
-        color: $sider-text-light;
+        color: $sider-item-text-light;
 
         .ant-menu-item {
-          background: $sider-bg-light;
-          &::after {
-            border-right: 3px solid $sider-text-light;
-          }
           &-selected {
-            background: $sider-selected-bg-light;
-            color: $sider-text-light;
+            background: $sider-item-selected-light;
+            color: $sider-item-text-light;
+            &::after {
+              border-right: 3px solid $sider-item-selected-border-light;
+              transform: scaleY(1);
+              opacity: 1;
+            }
+          }
+          &-active {
+            background: $sider-item-active-light;
+            color: $sider-item-text-light;
           }
         }
         .ant-menu-submenu {
@@ -157,5 +203,20 @@ export default {
     }
   }
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 8px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
 </style>
-

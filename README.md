@@ -14,10 +14,23 @@ if you are developing this project:
   2. yarn serve
   3. yarn storybook
   ```
-  
-### some reminder beforehand
-#### css naming: BEM
-`.blockName-elementName--modifierName`
+
+### CSS Naming: BEM
+
+```
+block-block__element-element--modifier--modifier-value
+// use double underline to seperate block and element.
+// if block include many words, use one dash to seperate
+```
+example:
+```
+XYButton--size-s
+XYAlert--type-info
+XYAlert--type-error
+xy-dropdown-menu__item--active(modifier is boolean, so simplify the value part)
+xy-table-pagination__item--active
+```
+
 
 ### Project setup
 ```

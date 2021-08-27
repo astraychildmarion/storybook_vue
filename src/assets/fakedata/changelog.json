@@ -1,0 +1,1086 @@
+{
+  "data": [
+    {
+      "request": "5274e28c46a417930f8cffd035242249",
+      "event": "Decom",
+      "id": "6114ecb15bb6f1d3dcac6dad",
+      "inventory": "60f320a3ac6bec6b7acd7cd9",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "",
+          "NewValue": "2021/08/20"
+        }
+      ],
+      "service_lan_ip": [
+        "10.11.0.222",
+        "10.99.8.222",
+        "10.99.14.222",
+        "19.11.0.22"
+      ],
+      "env": "MM",
+      "bu": "BI",
+      "target": {
+        "id": "60f320a3ac6bec6b7acd7cd9",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [
+          {
+            "key": "60f3184a562ad70f5ffb5527",
+            "label": "BI"
+          }
+        ],
+        "os": {
+          "key": "60f3184a562ad70f5ffb5518",
+          "label": "W2K19 Std",
+          "type": "WINDOWS"
+        },
+        "server_type": "PHY",
+        "service_lan_ip": [
+          "10.11.0.222",
+          "10.99.8.222",
+          "10.99.14.222",
+          "19.11.0.22"
+        ],
+        "cpu": 20,
+        "ram_gb": 64,
+        "purpose": "BI NAS",
+        "hostname": "BI-HP-NAS03",
+        "disk_capacity_gb": 40010,
+        "disk_partition": [
+          {
+            "seq": 0,
+            "size": 960,
+            "unit": "GB",
+            "drive": "C"
+          },
+          {
+            "seq": 0,
+            "size": 39,
+            "unit": "TB",
+            "drive": "D"
+          },
+          {
+            "seq": 0,
+            "size": 50,
+            "unit": "GB",
+            "drive": "X"
+          }
+        ],
+        "disk_memo": "960G x2 Raid1 + 2.4T x20 Raid6",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "10.111.0.222",
+        "vip": [
+          "3.3.3.3",
+          "3.3.3.4"
+        ],
+        "bu_ext": [],
+        "rack": "7A09 lower 9-10U",
+        "remark": "",
+        "provision_date": "2021/01/01",
+        "decommission_date": "2021/08/20",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-12T09:41:05.495Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "ca097feb5cdf308d59af6868a7e1e3dd",
+      "event": "Restore",
+      "id": "6110f8cb92f441b3e247ed6d",
+      "inventory": "6110d0596341f2da24a5d713",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "2021/08/29",
+          "NewValue": ""
+        }
+      ],
+      "service_lan_ip": [
+        "200.0.14.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d713",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.14.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test5",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:43:39.035Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "03fabea4539c863055881f1ef2c6a6a1",
+      "event": "Restore",
+      "id": "6110f8c292f441b3e247ed6c",
+      "inventory": "6110d0596341f2da24a5d710",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "2021/08/29",
+          "NewValue": ""
+        }
+      ],
+      "service_lan_ip": [
+        "200.0.12.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d710",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.12.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test2",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:43:30.288Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "ffd8984fbce9c2324742da0765820889",
+      "event": "Batch Decom",
+      "id": "6110f8bc92f441b3e247ed6a",
+      "inventory": "6110d0596341f2da24a5d710",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "",
+          "NewValue": "2021/08/29"
+        }
+      ],
+      "service_lan_ip": [
+        "200.0.12.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d710",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.12.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test2",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "2021/08/29",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:43:24.44Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true,
+      "children": [
+        {
+          "request": "ffd8984fbce9c2324742da0765820889",
+          "event": "Batch Decom",
+          "id": "6110f8bc92f441b3e247ed6b",
+          "inventory": "6110d0596341f2da24a5d713",
+          "diff": [
+            {
+              "Field": "Decom date",
+              "OldValue": "",
+              "NewValue": "2021/08/29"
+            }
+          ],
+          "service_lan_ip": [
+            "200.0.14.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d713",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.14.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test5",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "2021/08/29",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T09:43:24.441Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        }
+      ]
+    },
+    {
+      "request": "2d358d9f634ab71876e5668990f5ce26",
+      "event": "Restore",
+      "id": "6110f8a792f441b3e247ed69",
+      "inventory": "6110d0596341f2da24a5d710",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "2021/08/18",
+          "NewValue": ""
+        }
+      ],
+      "service_lan_ip": [
+        "200.0.12.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d710",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.12.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test2",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:43:03.339Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "a81e7019a7559f5938dd5eb14287c080",
+      "event": "Delete",
+      "id": "6110f8a092f441b3e247ed68",
+      "inventory": "60ed6aacf59981ae5f028566",
+      "diff": [],
+      "service_lan_ip": [
+        "5.5.2.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "60ed6aacf59981ae5f028566",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "000000000000000000000000",
+          "label": ""
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "PHY",
+        "service_lan_ip": [
+          "5.5.2.1"
+        ],
+        "cpu": 4,
+        "ram_gb": 4,
+        "purpose": "222",
+        "hostname": "A222",
+        "disk_capacity_gb": 80,
+        "disk_partition": [
+          {
+            "seq": 0,
+            "size": 80,
+            "unit": "GB",
+            "drive": "C"
+          }
+        ],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "5.5.2.2",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "2021/07/20",
+        "decommission_date": "2021/07/27",
+        "delete_at": null,
+        "update_by": "juno.goh@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:42:56.015Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "53e3aef05eecae3c8e74565037c11d52",
+      "event": "Excel Import",
+      "id": "6110f86c92f441b3e247ed67",
+      "inventory": "6110f86c92f441b3e247ed66",
+      "diff": [],
+      "service_lan_ip": [
+        "200.1.1.1"
+      ],
+      "env": "NTNX_FRI_C1",
+      "bu": "BI",
+      "target": {
+        "id": "6110f86c92f441b3e247ed66",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2ae0",
+          "label": "NTNX_FRI_C1",
+          "node_num": 28,
+          "factor": 0.1
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d7",
+          "label": "INTERNAL"
+        },
+        "bu": [
+          {
+            "key": "60f3184a562ad70f5ffb5527",
+            "label": "BI"
+          }
+        ],
+        "os": {
+          "key": "60f3184a562ad70f5ffb54f9",
+          "label": "CentOS 7.8",
+          "type": "LINUX"
+        },
+        "server_type": "VM",
+        "service_lan_ip": [
+          "200.1.1.1"
+        ],
+        "cpu": 4,
+        "ram_gb": 4,
+        "purpose": "sss",
+        "hostname": "testqq1",
+        "disk_capacity_gb": 90,
+        "disk_partition": [
+          {
+            "seq": 0,
+            "size": 90,
+            "unit": "GB",
+            "drive": "C"
+          }
+        ],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "2021/08/31",
+        "decommission_date": "",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:42:04.261Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "9db62695222d17c50a600ab347fd20ac",
+      "event": "Decom",
+      "id": "6110f5cf92f441b3e247ed65",
+      "inventory": "6110d0596341f2da24a5d710",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "",
+          "NewValue": "2021/08/18"
+        }
+      ],
+      "service_lan_ip": [
+        "200.0.12.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d710",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.12.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test2",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "2021/08/18",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T09:30:55.19Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true
+    },
+    {
+      "request": "3edfdfc7318c485c8ce34536900f6d0a",
+      "event": "Excel Import",
+      "id": "6110d0596341f2da24a5d715",
+      "inventory": "6110d0596341f2da24a5d70e",
+      "diff": [],
+      "service_lan_ip": [
+        "200.0.1.1"
+      ],
+      "env": "MM",
+      "bu": "",
+      "target": {
+        "id": "6110d0596341f2da24a5d70e",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [],
+        "os": {
+          "key": "000000000000000000000000",
+          "label": "",
+          "type": ""
+        },
+        "server_type": "VIP",
+        "service_lan_ip": [
+          "200.0.1.1"
+        ],
+        "purpose": "qqq",
+        "hostname": "test4",
+        "disk_capacity_gb": 0,
+        "disk_partition": [],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "",
+        "decommission_date": "",
+        "delete_at": null,
+        "update_by": "dora.ko@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T06:51:05.828Z",
+      "operator": "Dora Ko (YT-CWD)",
+      "show": true,
+      "children": [
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d716",
+          "inventory": "6110d0596341f2da24a5d70f",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.10.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d70f",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.10.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test1",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        },
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d719",
+          "inventory": "6110d0596341f2da24a5d712",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.11.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d712",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.11.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test3",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        },
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d717",
+          "inventory": "6110d0596341f2da24a5d710",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.12.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d710",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.12.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test2",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        },
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d71a",
+          "inventory": "6110d0596341f2da24a5d713",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.14.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d713",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.14.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test5",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        },
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d71b",
+          "inventory": "6110d0596341f2da24a5d714",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.15.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d714",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.15.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test7",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        },
+        {
+          "request": "3edfdfc7318c485c8ce34536900f6d0a",
+          "event": "Excel Import",
+          "id": "6110d0596341f2da24a5d718",
+          "inventory": "6110d0596341f2da24a5d711",
+          "diff": [],
+          "service_lan_ip": [
+            "200.0.16.1"
+          ],
+          "env": "MM",
+          "bu": "",
+          "target": {
+            "id": "6110d0596341f2da24a5d711",
+            "env": {
+              "key": "5ffd4232f6007bce3c6c2adf",
+              "label": "MM",
+              "node_num": 0,
+              "factor": 0
+            },
+            "zone": {
+              "key": "60f3184a562ad70f5ffb54d5",
+              "label": "MM"
+            },
+            "bu": [],
+            "os": {
+              "key": "000000000000000000000000",
+              "label": "",
+              "type": ""
+            },
+            "server_type": "VIP",
+            "service_lan_ip": [
+              "200.0.16.1"
+            ],
+            "purpose": "qqq",
+            "hostname": "test6",
+            "disk_capacity_gb": 0,
+            "disk_partition": [],
+            "disk_memo": "",
+            "bu_application": "",
+            "oob": "",
+            "ilo": "",
+            "vip": [],
+            "bu_ext": [],
+            "rack": "",
+            "remark": "",
+            "provision_date": "",
+            "decommission_date": "",
+            "delete_at": null,
+            "update_by": "dora.ko@yitmh.com",
+            "IsAuto": 0,
+            "used": false
+          },
+          "create_at": "2021-08-09T06:51:05.828Z",
+          "operator": "Dora Ko (YT-CWD)",
+          "show": true
+        }
+      ]
+    },
+    {
+      "request": "172cef3e88bbf2a94f3d5108aed5cf9c",
+      "event": "Decom",
+      "id": "6110cb6e6341f2da24a5d70d",
+      "inventory": "60f320a3ac6bec6b7acd7c10",
+      "diff": [
+        {
+          "Field": "Decom date",
+          "OldValue": "",
+          "NewValue": "2021/08/31"
+        }
+      ],
+      "service_lan_ip": [
+        "10.99.25.2"
+      ],
+      "env": "MM",
+      "bu": "INFRA-SYS",
+      "target": {
+        "id": "60f320a3ac6bec6b7acd7c10",
+        "env": {
+          "key": "5ffd4232f6007bce3c6c2adf",
+          "label": "MM",
+          "node_num": 0,
+          "factor": 0
+        },
+        "zone": {
+          "key": "60f3184a562ad70f5ffb54d5",
+          "label": "MM"
+        },
+        "bu": [
+          {
+            "key": "60f3184a562ad70f5ffb5530",
+            "label": "INFRA-SYS"
+          }
+        ],
+        "os": {
+          "key": "60f3184a562ad70f5ffb5513",
+          "label": "W2K12 Std",
+          "type": "WINDOWS"
+        },
+        "server_type": "VM",
+        "service_lan_ip": [
+          "10.99.25.2"
+        ],
+        "cpu": 8,
+        "ram_gb": 8,
+        "purpose": "Active Directory",
+        "hostname": "A-AD-002",
+        "disk_capacity_gb": 60,
+        "disk_partition": [
+          {
+            "seq": 0,
+            "size": 30,
+            "unit": "GB",
+            "drive": "C"
+          },
+          {
+            "seq": 0,
+            "size": 30,
+            "unit": "GB",
+            "drive": "D"
+          }
+        ],
+        "disk_memo": "",
+        "bu_application": "",
+        "oob": "",
+        "ilo": "",
+        "vip": [],
+        "bu_ext": [],
+        "rack": "",
+        "remark": "",
+        "provision_date": "2021/01/01",
+        "decommission_date": "2021/08/31",
+        "delete_at": null,
+        "update_by": "jeff.chiang@yitmh.com",
+        "IsAuto": 0,
+        "used": false
+      },
+      "create_at": "2021-08-09T06:30:06.911Z",
+      "operator": "Jeff Chiang (YT-CWD)",
+      "show": true
+    }
+  ]
+}

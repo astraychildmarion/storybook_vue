@@ -1,0 +1,52 @@
+import { file } from '@babel/types';
+import { Meta } from '@storybook/addon-docs';
+import { install } from 'ant-design-vue';
+import { doc } from 'prettier';
+import { project } from 'ramda';
+
+<Meta title="READ ME/How to install" />
+
+## install
+
+1. Copy `.npmrc` under this project into your project.
+1. Install plungin 
+```
+yarn add @xycloud/xycloud-ui-kit
+// or
+npm install @xycloud/xycloud-ui-kit
+```
+1. Go to `main.js` upder your project, add :
+```
+import XyCloudUiKit from '@xycloud/xycloud-ui-kit';
+Vue.use(XyCloudUiKit);
+```
+
+## Import component in to your project
+
+For example, if you want to import `XYFilter` in your project, please import it in your `.vue` file.  
+You don't need to import anything, only add component tag in your template. <b> Beaware, each component needs props to work functionally. </b>
+For props, please refer to component's doc.   
+```
+<Template>
+  <XYFilter />
+</Template>
+```
+
+## Component name
+```
+XYAppLayout
+XYServerDetail
+XYServerDetailCard
+XYTable
+XYTablePagination
+XYConfirmModal
+XYCountdownAlert
+XYCustomizeDisplay
+XYDayButton
+XYDropdownIconButton
+XYFilter
+XYHeader
+XYSider
+XYToolbox
+```
+Also, you can write in kebab style `x-y-app-layout`

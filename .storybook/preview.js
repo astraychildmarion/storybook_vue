@@ -1,22 +1,60 @@
+const customViewports = {
+  deskTopDisplay: {
+    name: 'DeskTop Display',
+    styles: {
+      width: '1920px',
+      height: '1080px',
+    },
+    type: 'desktop'
+  },
+  laptopDisplay: {
+    name: 'laptop Display',
+    styles: {
+      width: '1440px',
+      height: '900px',
+    },
+    type: 'desktop'
+  },
+  mediumDisplay: {
+    name: 'Medium Display',
+    styles: {
+      width: '992px',
+      height: '600px',
+    },
+    type: 'tablet'
+  },
+  tabletDisplay: {
+    name: 'Tablet Display',
+    styles: {
+      width: '768px',
+      height: '1024px',
+    },
+    type: 'tablet'
+  }
+};
+
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
   },
+  viewport: { viewports: customViewports },
+  layout: 'fullscreen',
   backgrounds: {
     values: [
-      { name: 'default', value: '#fff' },
-      { name: 'light', value: '#eee' },
-      { name: 'dark', value: '#000' },
-      { name: 'blue', value: '#98EEFF' },
+      { name: 'light', value: '#fff' },
+      { name: 'deep blue', value: '#102e4d' },
+      { name: 'card background', value: 'rgba(0, 0, 0, 0.15)' },
     ],
   },
-}
+};
 
-export const decorators = [(story) => ({
-  components: { story },
-  template: '<div style="margin: 1em;"><story /></div>'
-})]
+export const decorators = [
+  (story) => ({
+    components: { story },
+    template: '<div style="position: relative;"><story /></div>',
+  }),
+];
