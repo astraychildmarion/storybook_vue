@@ -1,0 +1,50 @@
+{
+  "plugins": [
+    {
+      "name": "zeplin-cli-connect-plugin-vue"
+    },
+    {
+      "name": "@zeplin/cli-connect-storybook-plugin",
+      "config": {
+        "url": "http://172.17.9.54/",
+        "startScript": "storybook"
+      }
+    }
+  ],
+  "projects": [
+    "6103b313f3abf39e69c284c2"
+  ],
+  "components": [
+    {
+      "path": "src\\components\\XYHeader.vue",
+      "zeplinIds": [
+        "6125c4d7779890b2f3645bf4"
+      ]
+    },
+    {
+      "path": "src\\components\\XYSider.vue",
+      "zeplinIds": [
+        "6125c4d994d214a158695830"
+      ]
+    },
+    {
+      "path": "src\\components\\XYAppListDrawer.vue",
+      "zeplinIds": [
+        "6125c4dbacbca7a0e5b2572a"
+      ]
+    },
+    {
+      "path": ".prettierrc",
+      "zeplinIds": [
+        "6125c4d7779890b2f3645bf4"
+      ]
+    }
+  ],
+  "gitlab": {
+    "repository": "CWD/xy-cloud-kit",
+    "url": "https://gitlab.ict888.net"
+  },
+  "styleguides": [
+    "6125c38813187ba18e2a6bc4"
+  ]
+}

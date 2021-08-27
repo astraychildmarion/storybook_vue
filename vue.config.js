@@ -1,5 +1,6 @@
-
 const path = require('path');
+const antVariables = require('./src/styles/antd-variables');
+
 const resolve = (dir) => path.join(__dirname, dir);
 
 module.exports = {
@@ -10,9 +11,9 @@ module.exports = {
     config.resolve.alias.set('@', resolve('src/'));
     config.module
       .rule('images')
-        .use('url-loader')
-          .loader('url-loader')
-          .tap(options => Object.assign(options, { limit: 10240 }))
+      .use('url-loader')
+      .loader('url-loader')
+      .tap((options) => Object.assign(options, { limit: 10240 }));
   },
   css: {
     extract: false,
@@ -29,11 +30,12 @@ module.exports = {
         // 改 ant design 主題色
         lessOptions: {
           modifyVars: {
-            // 'primary-color': '#FD80AC',
+            ...antVariables,
+            'primary-color': '#0488C5',
           },
           javascriptEnabled: true,
         },
       },
     },
   },
-}
+};
